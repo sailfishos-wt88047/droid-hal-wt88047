@@ -20,6 +20,11 @@
 /vendor\
 %{nil}
 
+%define android_config \
+#define QCOM_BSP 1\
+#define QTI_BSP 1\
+%{nil}
+
 %include rpm/dhd/droid-hal-device.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
